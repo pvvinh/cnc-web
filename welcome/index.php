@@ -108,7 +108,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Modify Book</h4>
+                            <h4 class="modal-title" id="myModalLabel">ModifyBook</h4>
                           </div>
                           <div class="modal-body">
                               <p> Test modal </p>
@@ -220,7 +220,7 @@
     <!-- Login Section -->
 <script type="text/javascript">
 function checklog(){
-        $('#loadlog').html('<i class="fa fa-spinner fa-pulse fa-fw"></i> Checking');
+        $('#loadlog').html('<i class="fa fa-spinner fa-pulse fa-fw"></i> Checking...');
         setTimeout(function(){
             $('#resultlog').load('checklog.php',$('#form-log').serializeArray());
             $('#loadlog').html('<i class="fa fa-check-square-o" aria-hidden="true"></i> Login');
@@ -229,7 +229,7 @@ function checklog(){
     }
 
 function checkreg(){
-        $('#loadreg').html('<i class="fa fa-spinner fa-pulse fa-fw"></i> Đang kiểm tra');
+        $('#loadreg').html('<i class="fa fa-spinner fa-pulse fa-fw"></i> Checking...');
         setTimeout(function(){
             $('#resultreg').load('checkreg.php',$('#form-reg').serializeArray());
             $('#loadreg').html('<i class="fa fa-check-square-o" aria-hidden="true"></i> Đăng kí');
@@ -256,7 +256,7 @@ function checkreg(){
                             <input type="text" class="form-control" name="username" placeholder="Enter username">
                         </div>
                         <div class="form-group">
-                            <label for="username">Password</label>
+                            <label for="password">Password</label>
                             <input type="password" class="form-control" name="password" placeholder="Enter password">
                         </div>
                         
